@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    /* background-image: url("https://tse2.mm.bing.net/th?id=OIP.L9QPFHdNx-GIxjQL4LCSWgHaEu&pid=Api&P=0&h=180");
+    height:100%;
+    width:100%; */
+}
+/* #image{
+    height: 100%;
+    width:100%;
+} */
+nav{
+    height:90px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(127, 37, 67);
+    border:none;
+}
+#logo{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    color:white;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+
+}
+
+[type="text"]{
+height: 40px;
+width:250px;
+border: none;
+outline: none;
+border-radius: 30px;
+padding-left: 10px;
+}
+[type="submit"]{
+    height:35px;
+    width:120px;
+    border-radius: 5%;
+    border:none;
+    outline: none;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#container{
+    height:100vh;
+    /* border:2px solid black; */
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap:20px;
+   padding-top:20px;
+}
+#recipe_item{
+    height:350px;
+    width:290px;
+    margin-top: 20px;
+    /* border:2px solid blue; */
+    border-radius: 20px;
+    transition: all 400ms ease;
+filter: blur(5px);
+}
+#recipe_item:hover{
+transform: scale(110%);
+filter:blur(0);
+}
+
+#food_img{
+    height:70%;
+    width:100%;
+    border-radius: 10px;
+  
+   
+}
+
+#food_name{
+    font-size:25px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    padding:10px;
+}
+#view_recipe{
+    height: 15%;
+    width:100%;
+    border:none;
+    border-radius: 10px;
+    padding:10px 10px;
+    background-color: black;
+    color:white;
+    font-size:18px;
+    font-weight: 600;
+    
+    
+}
+#ing_ins{
+    height:350vh;
+    width:100vw;
+    /* border:2px solid red; */
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: auto;
+}
+#ing_ins_info{
+    height:500px;
+    width:650px;
+    /* border:2px solid black; */
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+     display: flex; 
+    /* justify-content: center;
+    align-items: center;  */
+    flex-direction: column;
+    position:absolute;
+    top:100px;
+    left:400px;
+    overflow: auto;
+   
+    
+}
+#ing_info{
+    /* border: 2px solid red; */
+    flex-basis:40%;
+}
+#ing_info h1{
+    font-size:18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color:rgb(244, 24, 98);
+    padding-top: 10px;
+    padding-left: 20px;
+    
+   
+}
+ul{
+    font-size:15px;
+    font-family: cursive;
+    font-style: italic;
+    color:black;
+    overflow: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+    padding-left: 60px;
+}
+
+#ins_info{
+    /* border: 2px solid red; */
+    flex-basis: 60%;
+}
+#ins_info h1{
+    font-size:18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color:rgb(244, 24, 98);
+    padding-top: 10px;
+    padding-left: 20px;
+   
+}
+p{
+    font-size:15px;
+    font-family: cursive;
+    font-style: italic;
+    color:black;
+    overflow: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    overflow: auto;
+    font-weight: 150;
+}
+#close{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+@media(max-width:390px){
+    #logo{
+        height: 30px;
+        width: 200px;
+        font-size: 10px;
+        border: 2px solid black;
+    }
+    nav{
+        width: 100vw;
+        height: 10px;
+    }
+    [type="text"]{
+        height: 15%;
+        width: 10%;
+    }
+}
